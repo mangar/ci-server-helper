@@ -1,0 +1,56 @@
+<div class="well well-lg">
+<h1>Pré Release Notes (<%= @data[:debug][:appid]%> / <%= @data[:debug][:environment]%>)</h1>
+<h2>Versão:<%= @data[:debug][:version]%></h2>
+</div>
+
+<h3>List</h3>
+
+
+<%if @data[:debug][:q].upcase == "ALM"%>
+
+
+<table class="table">
+  <tr>
+    <th>ALM</th>
+    <th>Description</th>
+    <th>Environment</th>
+    <th>Owner</th>
+    <th>Created@</th>
+    <th>Author</th>
+  </tr>
+
+  <% @data[:result].each do |r| %>
+  <tr>
+    <td><%= r["body_text_alm"]["id"]%></td>
+    <td><%= r["body_text_alm"]["description"]%></td>
+    <td><%= r["body_text_alm"]["environment"]%></td>
+    <td><%= r["body_text_alm"]["owner"]%></td>
+    <td><%= r[:created_at]%></td>
+    <td><%= r[:author]%></td>
+  </tr>
+  <%end-%>
+
+</table>
+
+
+<% else %>
+
+<table class="table table-striped">
+  <tr>
+    <th>Subject</th>
+    <th>Body</th>
+    <th>Author</th>
+  </tr>
+
+  <% @data[:result].each do |r| %>
+  <tr>
+    <td><%= r["content"]%></td>
+    <td><%= r["body_text"]%></td>
+    <td><%= r["author"]%></td>
+  </tr>
+  <%end-%>
+
+</table>
+
+
+<%end-%>

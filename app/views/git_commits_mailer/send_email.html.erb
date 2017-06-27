@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>
+    <h1>Pré Release Notes (<%= @appid%> / <%= @environment%>)</h1>
+    <h2>Versão:<%= @version%>
+    <%if @q.upcase == "ALM"%>
+      - ALM
+    <%end-%>
+    </h2>
+    </p>
+
+    <h2>List</h2>
+
+    <p>
+    <%if @q.upcase == "ALM"%>
+
+
+      <table border="1" width="100%">
+        <tr>
+          <th>ALM</th>
+          <th>Description</th>
+          <th>Environment</th>
+          <th>Owner</th>
+          <th>Created@</th>
+          <th>Author</th>
+        </tr>
+
+        <% @records.each do |r| %>
+        <tr>
+          <td><%= r["body_text_alm"]["id"]%></td>
+          <td><%= r["body_text_alm"]["description"]%></td>
+          <td><%= r["body_text_alm"]["environment"]%></td>
+          <td><%= r["body_text_alm"]["owner"]%></td>
+          <td><%= r[:created_at]%></td>
+          <td><%= r[:author]%></td>
+        </tr>
+        <%end-%>
+
+      </table>
+
+    <%else%>
+
+      <table border="1" width="100%">
+        <tr>
+          <td><b>Comment</b></td>
+          <td><b>Author</b></td>
+        </tr>
+        <%@records.each do |record|%>
+        <tr>
+          <td><%= record["content"]%></td>
+          <td><%= record["author"]%></td>
+        </tr>
+        <%- end%>
+      </table>
+
+    <%end-%>
+    </p>
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </body>
+</html>

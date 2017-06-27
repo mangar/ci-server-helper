@@ -1,0 +1,15 @@
+<%if @alm%>
+Last version: <%= @version%>                (<%= @appid%>  / <%= @environment%>)
+<%end-%>
+
+<%if @records %>
+  <%@records.each do |r|%>
+  <%if @alm%>
+<%= r["body_text_alm"]["id"].ljust(10, ' ')%> | <%= r["body_text_alm"]["environment"].ljust(6, ' ')%> | <%= r["body_text_alm"]["owner"].ljust(6, ' ')%> | <%= r["body_text_alm"]["description"]%>
+  <%else%>
+<%= r.id_hash%> | <%= r.content%> | <%= r.author%>
+  <%end-%>
+  <%end-%>
+<%else%>
+  <%= @message%>
+<%end-%>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Report Diário - <%= @so%></h1>
+
+    <h2>Resumo</h2>
+    <p>
+      <table border="1" width="50%">
+        <tr>
+          <td><b>Lista</b></td>
+          <td><b>#Tickets</b></td>
+        </tr>
+        <%@details.keys.each do |k|%>
+        <tr>
+          <td><%= k%></td>
+          <td><%= @details[k]%></td>
+        </tr>
+        <%- end%>
+      </table>
+    </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <hr>
+    <p>Clique <a href="http:<%= @trello_file.file.url%>">aqui</a> e baixe o último arquivo com o status do board no Trello.</p>
+    <p>&nbsp;</p>
+    <hr>
+    <small>
+    Quem está recebendo este email: <%= @to%>
+    </small>
+  </body>
+</html>

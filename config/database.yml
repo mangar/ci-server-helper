@@ -1,0 +1,27 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+
+development:
+  <<: *default
+  database: app_development
+  host: <%= ENV['DATABASE_HOST'] %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+
+test:
+  <<: *default
+  database: app_test
+  host: <%= ENV['DATABASE_HOST'] %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+
+
+production:
+  <<: *default
+  host: ec2-184-72-216-69.compute-1.amazonaws.com
+  database: d6ge239fm00q7
+  username: nubcexhfjyawts
+  password: 0bf68eea1902d406ca7ed5305604a178b6e54d58ac0b8c06d121f22d18b62452

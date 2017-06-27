@@ -1,0 +1,296 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ServerConfiguration",
+		"_postman_id": "bceaa50d-e1c3-b466-416a-9a061def1bfc",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BitBucket",
+			"description": "",
+			"item": [
+				{
+					"name": "/api/v1/bitbucket/content",
+					"request": {
+						"url": "{{host}}/api/v1/bitbucket/content",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic c2lyaW1vbGU6aTJaeQ==",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "data",
+									"value": "e3edca2ec3acfe47ed2a49e8aee1ab06af85b38b|2017-02-02T15:55:35-02:00|version 62|Marcio Garcia b069de9a5967b169e463a4cbcfda57cd59fa666a|2017-02-02T15:55:03-02:00|version name|Marcio Garcia ab4ebee0c82708d3fe3972910fe4d40c990d6806|2017-02-02T14:45:37-02:00|sync|Marcio Garcia 1fd6fd79a85d014e82de2158b1b1201694c3ac64|2017-02-02T12:55:42+00:00|Merged in feature/generalview-otavio (pull request #476)|Guilherme Santana 7a21167b5d3f7286a1d12a8f7924fffd911ed110|2017-02-02T12:30:19+00:00|Merged in feature/bloco2-bugfix (pull request #486)|Guilherme Santana 82a47ff80006deb031ef2780c048b522d54e7850|2017-02-02T10:29:39-02:00|Contact fixes|beto ea47114536ade1b8c3a71f64c66308b3716f04ba|2017-02-02T09:04:02-02:00|Merge branch 'develop' into feature/bloco2-bugfix|beto 910f6272ccfc98ca25e9be1e1a04ee67b786c3a7|2017-02-02T08:51:32-02:00|Concreção contatos|beto 53f0d9754c1b559f35657084c04a738d5d75bd0d|2017-02-02T08:51:14-02:00|ALM-1369|beto 27c140e8062f0bffecc6500e89950004dd87f78b|2017-02-01T19:40:04-02:00|Implementing StickyHeaders|Otávio Massard Mendes d362f17086fc4cb526c836ee5b4fe437b8f30b1d|2017-02-01T20:30:28+00:00|Merged in feature/bloco2-bugfix (pull request #482)|walky silva d4db8b9e8c06a26b1065c05e75a5d45591c7d522|2017-02-01T20:30:03+00:00|Merged in feature/dds-bugfix (pull request #484)|walky silva 9c3399cfb2bd41fd5cef8985bd31e341fe87a38f|2017-02-01T18:28:14-02:00|Merge branch 'feature/dds-bugfix' of https://bitbucket.org/branext/next-app-android2 into feature/dds-bugfix|walkys 77965d8d3f30c5b37aa82a57a03bd26a01da465f|2017-02-01T18:27:24-02:00|adjusts subscriber|walkys 02d604e047621199a17a5be3a11f4471de697229|2017-02-01T16:47:07-02:00|Merge branch 'develop' into feature/dds-bugfix|Joao Victor 5f9682308775828f4c6d868368cf5caca6159b3e|2017-02-01T16:46:06-02:00|Merge branch 'feature/dds-bugfix' of https://bitbucket.org/branext/next-app-android2 into feature/dds-bugfix|Joao Victor 13a29e89dd628632fa7d5a3738347acd7355a0d9|2017-02-01T16:45:40-02:00|ALM 1351|Joao Victor 3e8caa47797d343bf2b8906dda446ae06dd3e4b2|2017-02-01T15:56:27-02:00|General fix|beto 6dcb3a49107cf523db09b6d110249c5b93f9ff2a|2017-02-01T14:07:39-02:00|ALM-1404|beto 0f62fecd7740068fcf5e22b12296de8e6c7e854a|2017-02-01T13:44:53-02:00|Merge branch 'develop' into feature/bloco2-bugfix|beto",
+									"type": "text"
+								},
+								{
+									"key": "appid",
+									"value": "next-ios",
+									"type": "text"
+								},
+								{
+									"key": "environment",
+									"value": "develop",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/bitbucket/report/:appid/:env/:count",
+					"request": {
+						"url": "{{host}}/api/v1/bitbucket/report/next-android/master/200.email?q=ALM&version=",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic c2lyaW1vbGU6aTJaeQ==",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "data",
+									"value": "e3edca2ec3acfe47ed2a49e8aee1ab06af85b38b|2017-02-02T15:55:35-02:00|version 62|Marcio Garcia b069de9a5967b169e463a4cbcfda57cd59fa666a|2017-02-02T15:55:03-02:00|version name|Marcio Garcia ab4ebee0c82708d3fe3972910fe4d40c990d6806|2017-02-02T14:45:37-02:00|sync|Marcio Garcia 1fd6fd79a85d014e82de2158b1b1201694c3ac64|2017-02-02T12:55:42+00:00|Merged in feature/generalview-otavio (pull request #476)|Guilherme Santana 7a21167b5d3f7286a1d12a8f7924fffd911ed110|2017-02-02T12:30:19+00:00|Merged in feature/bloco2-bugfix (pull request #486)|Guilherme Santana 82a47ff80006deb031ef2780c048b522d54e7850|2017-02-02T10:29:39-02:00|Contact fixes|beto ea47114536ade1b8c3a71f64c66308b3716f04ba|2017-02-02T09:04:02-02:00|Merge branch 'develop' into feature/bloco2-bugfix|beto 910f6272ccfc98ca25e9be1e1a04ee67b786c3a7|2017-02-02T08:51:32-02:00|Concreção contatos|beto 53f0d9754c1b559f35657084c04a738d5d75bd0d|2017-02-02T08:51:14-02:00|ALM-1369|beto 27c140e8062f0bffecc6500e89950004dd87f78b|2017-02-01T19:40:04-02:00|Implementing StickyHeaders|Otávio Massard Mendes d362f17086fc4cb526c836ee5b4fe437b8f30b1d|2017-02-01T20:30:28+00:00|Merged in feature/bloco2-bugfix (pull request #482)|walky silva d4db8b9e8c06a26b1065c05e75a5d45591c7d522|2017-02-01T20:30:03+00:00|Merged in feature/dds-bugfix (pull request #484)|walky silva 9c3399cfb2bd41fd5cef8985bd31e341fe87a38f|2017-02-01T18:28:14-02:00|Merge branch 'feature/dds-bugfix' of https://bitbucket.org/branext/next-app-android2 into feature/dds-bugfix|walkys 77965d8d3f30c5b37aa82a57a03bd26a01da465f|2017-02-01T18:27:24-02:00|adjusts subscriber|walkys 02d604e047621199a17a5be3a11f4471de697229|2017-02-01T16:47:07-02:00|Merge branch 'develop' into feature/dds-bugfix|Joao Victor 5f9682308775828f4c6d868368cf5caca6159b3e|2017-02-01T16:46:06-02:00|Merge branch 'feature/dds-bugfix' of https://bitbucket.org/branext/next-app-android2 into feature/dds-bugfix|Joao Victor 13a29e89dd628632fa7d5a3738347acd7355a0d9|2017-02-01T16:45:40-02:00|ALM 1351|Joao Victor 3e8caa47797d343bf2b8906dda446ae06dd3e4b2|2017-02-01T15:56:27-02:00|General fix|beto 6dcb3a49107cf523db09b6d110249c5b93f9ff2a|2017-02-01T14:07:39-02:00|ALM-1404|beto 0f62fecd7740068fcf5e22b12296de8e6c7e854a|2017-02-01T13:44:53-02:00|Merge branch 'develop' into feature/bloco2-bugfix|beto",
+									"type": "text"
+								},
+								{
+									"key": "appid",
+									"value": "next-android",
+									"type": "text"
+								},
+								{
+									"key": "environment",
+									"value": "dev",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/report/:appid/:env/:count.HTML?q=XX&date=dd-mm-yyyy",
+					"request": {
+						"url": "{{host}}/api/v1/bitbucket/report/next-android/develop/2000.json?q=&date=20-03-2017",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic c2lyaW1vbGU6aTJaeQ==",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "data",
+									"value": "e3edca2ec3acfe47ed2a49e8aee1ab06af85b38b|2017-02-02T15:55:35-02:00|version 62|Marcio Garcia b069de9a5967b169e463a4cbcfda57cd59fa666a|2017-02-02T15:55:03-02:00|version name|Marcio Garcia ab4ebee0c82708d3fe3972910fe4d40c990d6806|2017-02-02T14:45:37-02:00|sync|Marcio Garcia 1fd6fd79a85d014e82de2158b1b1201694c3ac64|2017-02-02T12:55:42+00:00|Merged in feature/generalview-otavio (pull request #476)|Guilherme Santana 7a21167b5d3f7286a1d12a8f7924fffd911ed110|2017-02-02T12:30:19+00:00|Merged in feature/bloco2-bugfix (pull request #486)|Guilherme Santana 82a47ff80006deb031ef2780c048b522d54e7850|2017-02-02T10:29:39-02:00|Contact fixes|beto ea47114536ade1b8c3a71f64c66308b3716f04ba|2017-02-02T09:04:02-02:00|Merge branch 'develop' into feature/bloco2-bugfix|beto 910f6272ccfc98ca25e9be1e1a04ee67b786c3a7|2017-02-02T08:51:32-02:00|Concreção contatos|beto 53f0d9754c1b559f35657084c04a738d5d75bd0d|2017-02-02T08:51:14-02:00|ALM-1369|beto 27c140e8062f0bffecc6500e89950004dd87f78b|2017-02-01T19:40:04-02:00|Implementing StickyHeaders|Otávio Massard Mendes d362f17086fc4cb526c836ee5b4fe437b8f30b1d|2017-02-01T20:30:28+00:00|Merged in feature/bloco2-bugfix (pull request #482)|walky silva d4db8b9e8c06a26b1065c05e75a5d45591c7d522|2017-02-01T20:30:03+00:00|Merged in feature/dds-bugfix (pull request #484)|walky silva 9c3399cfb2bd41fd5cef8985bd31e341fe87a38f|2017-02-01T18:28:14-02:00|Merge branch 'feature/dds-bugfix' of https://bitbucket.org/branext/next-app-android2 into feature/dds-bugfix|walkys 77965d8d3f30c5b37aa82a57a03bd26a01da465f|2017-02-01T18:27:24-02:00|adjusts subscriber|walkys 02d604e047621199a17a5be3a11f4471de697229|2017-02-01T16:47:07-02:00|Merge branch 'develop' into feature/dds-bugfix|Joao Victor 5f9682308775828f4c6d868368cf5caca6159b3e|2017-02-01T16:46:06-02:00|Merge branch 'feature/dds-bugfix' of https://bitbucket.org/branext/next-app-android2 into feature/dds-bugfix|Joao Victor 13a29e89dd628632fa7d5a3738347acd7355a0d9|2017-02-01T16:45:40-02:00|ALM 1351|Joao Victor 3e8caa47797d343bf2b8906dda446ae06dd3e4b2|2017-02-01T15:56:27-02:00|General fix|beto 6dcb3a49107cf523db09b6d110249c5b93f9ff2a|2017-02-01T14:07:39-02:00|ALM-1404|beto 0f62fecd7740068fcf5e22b12296de8e6c7e854a|2017-02-01T13:44:53-02:00|Merge branch 'develop' into feature/bloco2-bugfix|beto",
+									"type": "text"
+								},
+								{
+									"key": "appid",
+									"value": "next-android",
+									"type": "text"
+								},
+								{
+									"key": "environment",
+									"value": "dev",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/bitbucket/slack",
+					"request": {
+						"url": "{{localhost}}/api/v1/bitbucket/slack?token=a4bbp9QuLbc84E8ZYOljKuhT&text=alm develop",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic c2lyaW1vbGU6aTJaeQ==",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "data",
+									"value": "e3edca2ec3acfe47ed2a49e8aee1ab06af85b38b|2017-02-02T15:55:35-02:00|version 62|Marcio Garcia b069de9a5967b169e463a4cbcfda57cd59fa666a|2017-02-02T15:55:03-02:00|version name|Marcio Garcia ab4ebee0c82708d3fe3972910fe4d40c990d6806|2017-02-02T14:45:37-02:00|sync|Marcio Garcia 1fd6fd79a85d014e82de2158b1b1201694c3ac64|2017-02-02T12:55:42+00:00|Merged in feature/generalview-otavio (pull request #476)|Guilherme Santana 7a21167b5d3f7286a1d12a8f7924fffd911ed110|2017-02-02T12:30:19+00:00|Merged in feature/bloco2-bugfix (pull request #486)|Guilherme Santana 82a47ff80006deb031ef2780c048b522d54e7850|2017-02-02T10:29:39-02:00|Contact fixes|beto ea47114536ade1b8c3a71f64c66308b3716f04ba|2017-02-02T09:04:02-02:00|Merge branch 'develop' into feature/bloco2-bugfix|beto 910f6272ccfc98ca25e9be1e1a04ee67b786c3a7|2017-02-02T08:51:32-02:00|Concreção contatos|beto 53f0d9754c1b559f35657084c04a738d5d75bd0d|2017-02-02T08:51:14-02:00|ALM-1369|beto 27c140e8062f0bffecc6500e89950004dd87f78b|2017-02-01T19:40:04-02:00|Implementing StickyHeaders|Otávio Massard Mendes d362f17086fc4cb526c836ee5b4fe437b8f30b1d|2017-02-01T20:30:28+00:00|Merged in feature/bloco2-bugfix (pull request #482)|walky silva d4db8b9e8c06a26b1065c05e75a5d45591c7d522|2017-02-01T20:30:03+00:00|Merged in feature/dds-bugfix (pull request #484)|walky silva 9c3399cfb2bd41fd5cef8985bd31e341fe87a38f|2017-02-01T18:28:14-02:00|Merge branch 'feature/dds-bugfix' of https://bitbucket.org/branext/next-app-android2 into feature/dds-bugfix|walkys 77965d8d3f30c5b37aa82a57a03bd26a01da465f|2017-02-01T18:27:24-02:00|adjusts subscriber|walkys 02d604e047621199a17a5be3a11f4471de697229|2017-02-01T16:47:07-02:00|Merge branch 'develop' into feature/dds-bugfix|Joao Victor 5f9682308775828f4c6d868368cf5caca6159b3e|2017-02-01T16:46:06-02:00|Merge branch 'feature/dds-bugfix' of https://bitbucket.org/branext/next-app-android2 into feature/dds-bugfix|Joao Victor 13a29e89dd628632fa7d5a3738347acd7355a0d9|2017-02-01T16:45:40-02:00|ALM 1351|Joao Victor 3e8caa47797d343bf2b8906dda446ae06dd3e4b2|2017-02-01T15:56:27-02:00|General fix|beto 6dcb3a49107cf523db09b6d110249c5b93f9ff2a|2017-02-01T14:07:39-02:00|ALM-1404|beto 0f62fecd7740068fcf5e22b12296de8e6c7e854a|2017-02-01T13:44:53-02:00|Merge branch 'develop' into feature/bloco2-bugfix|beto",
+									"type": "text"
+								},
+								{
+									"key": "appid",
+									"value": "next-android",
+									"type": "text"
+								},
+								{
+									"key": "environment",
+									"value": "dev",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trello",
+			"description": "",
+			"item": [
+				{
+					"name": "/api/v1/trello/all/ALM - Android.json?labels=Android",
+					"request": {
+						"url": "{{host}}/api/v1/trello/all/alm-android.xls?labels=RefinoVisual,QA&to=email@gmail.com,otheremail@gmail.com",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic c2lyaW1vbGU6aTJaeQ==",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/trello/all/:board.:JSON",
+					"request": {
+						"url": "{{host}}/api/v1/trello/all/ALM - Android.xls?labels=Android&to=email@gmail.com,otheremail@gmail.com",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic c2lyaW1vbGU6aTJaeQ==",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/trello/list/:board.:JSON",
+					"request": {
+						"url": "{{localhost}}/api/v1/trello/list/ALM - Android.json?labels=Android",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/api/v1/version",
+			"request": {
+				"url": "{{host}}/api/v1/version/next-android/store",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/version",
+			"request": {
+				"url": "{{host}}/api/v1/version/next-android/develop-sit",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "version",
+							"value": "5001",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/version",
+			"request": {
+				"url": "{{host}}/api/v1/version//next-android/store",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/get_last",
+			"request": {
+				"url": "{{host}}/api/v1/get_last/AndroidApp/develop",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/get_all",
+			"request": {
+				"url": "{{host}}/api/v1/get_all",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

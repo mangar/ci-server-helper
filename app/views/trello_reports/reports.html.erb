@@ -1,0 +1,19 @@
+<h1>Trello - Report</h1>
+<hr>
+
+<table width="100%">
+  <tr>
+    <td>ID</td>
+    <td>File name</td>
+    <td>Update@</td>
+  </tr>
+  <% @records.each do |r| %>
+  <tr>
+    <td><%= r.id%></td>
+    <td>
+      <a href="<%= r.file.url%>"><%= r.file_file_name%></a>
+    </td>
+    <td><%= r.updated_at%></td>
+  </tr>
+  <%end-%>
+</table>

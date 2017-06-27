@@ -1,0 +1,32 @@
+services:
+  image: mangar/rails-pg:5.0.0
+  command: bash -c "/bin/bash docker-start.sh"
+  volumes:
+    - .:/app
+  ports:
+    - "3000:3000"
+  links:
+    - postgres
+  environment:
+    - LOGENTRIES_TOKEN=YOUR_KEY_HERE
+    - AWS_S3_BUCKET=YOUR_KEY_HERE
+    - AWS_S3_KEY_ID=YOUR_KEY_HERE
+    - AWS_S3_KEY_SECRET=YOUR_KEY_HERE
+    - AWS_S3_REGION=us-east-1
+    - TRELLO_NEXT_PUBLIC_KEY=YOUR_KEY_HERE
+    - TRELLO_NEXT_TOKEN=YOUR_KEY_HERE
+    - SENDGRID_USERNAME=YOUR_KEY_HERE
+    - SENDGRID_PASSWORD=YOUR_KEY_HERE
+    - SENDGRID_API_KEY=YOUR_KEY_HERE
+    - REDIS_URL=redis://redis:6379
+    - SLACK_API_TOKEN=YOUR_KEY_HERE
+
+postgres:
+  image: postgres:9.4
+  ports:
+    - "5432:5432"
+
+redis:
+  image: redis:3.2.1
+  ports:
+    - "6379:6379"
